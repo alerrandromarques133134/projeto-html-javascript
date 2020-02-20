@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="file:///E:/trabalho%20alerrandro/porjetos-js/lightbox.html">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            display: flex;
+            height: 400px;
+            background: #ccc;
+            justify-content: center;
+            align-items: center;
+            font: 88px Arial
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: #666;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/metallica.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/DragonForce-ValleyoftheDammned.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/loading.gif" alt=""></div>
+            <div class="swiper-slide"><img src="./images/Metallica-752x497.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>    
+    </div>
+
+<script src="./js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination:{
+            el: '.swiper-pagination',
+            autoHeight: true
+        }
+    })
+    
+</script>
+<br>
+<br>
+<br>
+<br>
+
+
+<img width="190px" height="190" id="img" data-zoom-image="./images/photo01.jpg" src="./images/photo01.jpg" alt="">
+    <img width="190px" height="190" id="img" data-zoom-image="./images/metallica.jpg" src="./images/metallica.jpg" alt="">
+    <img width="190px" height="190" id="img" data-zoom-image="./images/DragonForce-ValleyoftheDammned" src="./images/DragonForce-ValleyoftheDammned.jpg.jpg" alt="">
+    <img width="190px" height="190" id="img" data-zoom-image="./images/metallica.jpg" src="./images/metallica.jpg" alt="">
+    <img width="190px" height="190" id="img" data-zoom-image="./images/4444.jpg" src="./images/4444.jpg" alt="">
+    <img width="190px" height="190" id="img" data-zoom-image="./images/photo01.jpg" src="./images/photo01.jpg" alt="">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/jquery.elevatezoom.js"></script>
+    <script>
+        $('#img').elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750
+   }); 
+  
+
+ 
+    </script>
+
+</body>
+<h1> <link href="lightbox.html" rel="stylesheet" title="Default Style"></h1>
+</html>
